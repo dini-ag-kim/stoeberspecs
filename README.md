@@ -6,8 +6,7 @@ Werkzeuge und Verfahren zur Standardisierung von OER-Metadaten
 
 ### <a id="respec"></a>[ReSpec](https://github.com/w3c/respec)
 
-* [ReSpec Demo](evaluation/ReSpec/demo-unofficial.html) (Status: "unofficial")
-* [ReSpec Demo](evaluation/ReSpec/demo-base.html) (Status: "base")
+* [ReSpec Demo](evaluation/ReSpec/demo-service-card.html)
 
 ##### Vorteile
 

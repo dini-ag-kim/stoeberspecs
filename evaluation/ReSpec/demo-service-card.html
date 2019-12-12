@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Harmonisierungsempfehlung #01</title>
+        <script src='https://www.w3.org/Tools/respec/respec-w3c' async class='remove'></script>
+        <script class='remove'>
+            var respecConfig = {
+                editors: [{
+                    name: "Adrian Pohl"
+                }, {
+                    name: "Annett Zobel"
+                }, {
+                    name: "Matthias Hupfer"
+                }, {
+                    name: "Steffen Hippeli"
+                }, {
+                    name: "Torsten Simon"
+                }],
+                github: "https://github.com/dini-ag-kim/oer-metadata-schemas",
+                localBiblio: {
+                    "schema.org": {
+                        title: "schema.org Vocabulary",
+                        href: "https://schema.org",
+                        publisher: "W3C"
+                    },
+                    "IETFBCP47": {
+                        title: "BCP: 47 - Tags for Identifying Languages",
+                        href: "https://tools.ietf.org/html/bcp47",
+                        publisher: "IETF"
+                    }
+                },
+                logos: [],
+                publishDate: "2019-03-09",
+                specStatus: "unofficial",
+                subtitle: "OER-Metadaten-AG"
+            };
+        </script>
+    </head>
+    <body>
+        <h1>Visitenkarte von (O)ER Services</h1>
+        <section id='abstract'>
+            <p>
+                Mit dieser Harmonisierungsempfehlung sollen Lerninhalte-Services besser auffindbar und nutzbar werden, bspw. innerhalb einer vernetzten Infrastruktur. Lerninhalte, insbesondere freie, sogenannte OER, sollen über die Grenzen von Organisationen und Ländern hinweg kooperativer erstellbar, nutzbar und verwaltbar werden.
+            </p>
+        </section>
+        <section id='sotd'>
+        </section>
+        <section id="service-card">
+            <h2>Implementierung</h2>
+            <section>
+                <h2>Format</h2>
+                <p>
+                    Eine Visitenkarte wird durch ein JSON-Objekt repräsentiert. Dieses JSON-Objekt beinhaltet obligatorische wie optionale Schlüssel/Werte-Paare.
+                </p>
+                <p>
+                    Neben allgemeinen Informationen zur Applikation werden auch die speziellen Services mitgeteilt, die extern nutzbar sind (Suche, Harvesting, Tools).
+                </p>
+                <p>
+                    Die Visitenkarte einer Applikation wird im JSON-LD-Format bereitgestellt, entweder als eigenes JSON-Dokument oder eingebettet in die Startseite. Die URL, hinter der sich das Dokument befindet, kann dann abgefragt und die resultierenden Inhalte ausgewertet werden.
+                </p>
+                <p>
+                    Wird die Visitenkarte als JSON-Dokument angeboten, sollte der folgende `Content-Type` Header gesetzt werden:
+                </p>
+                <pre>
+                    Content-Type: application/ld+json
+                </pre>
+                <p>
+                    Wenn das JSON-Dokument in die Startseite der Applikation eingebettet wird, geschieht dies mit Nutzung eines `script`-Tags vornehmlich im `head`-Bereich:
+                </p>
+                <pre>
+                    &lt;script type="application/ld+json">
+                        [...]
+                    &lt;/script>
+                </pre>
+                <p>
+                    Alternativ kann eine Discovery-URL in die Seite eingebunden werden:
+                </p>
+                <pre>
+                    &lt;link rel="meta" type="application/ld+json" href="[...]" title="Service-Description" />
+                </pre>
+                <p>
+                    Oder mittels `Link`-Header und Relation `meta` kommuniziert werden:
+                </p>
+                <pre>
+                    HTTP/1.1 200 OK
+                    Link: &lt;[...]>; rel="meta"
+                </pre>
+            </section>
+            <section>
+                <h2>Vokabular/Datenstruktur</h2>
+                <p>
+                    Als Vokabular für eine Visitenkarte dient [[schema.org]]. Alle Einträge können auf standardisierte Typen und Properties abgebildet werden. Im Folgenden wird die Struktur der Visitenkarte beschrieben. Nebst einer Kurzbeschreibung wird angegeben, ob der Wert eine Pflichtangabe ist und um welchen Typ es sich handelt (mit Bezug zu [[schema.org]]). Wenn erforderlich wird der Wertebereich festgelegt und kurze Beispiele gegeben.
+                </p>
+                <section data-dfn-for="@context">
+                    <h2><dfn>@context</dfn></h2>
+                    <p>
+                        Der Link zum JSON-LD-Kontext für das Dokument
+                    </p>
+                    <dl>
+                        <dt>Pflichtangabe</dt>
+                        <dd>ja</dd>
+                    </dl>
+                    <dl>
+                        <dt>Datentyp</dt>
+                        <dd>URL</dd>
+                    </dl>
+                    <dl>
+                        <dt>Wertebereich</dt>
+                        <dd>`https://schema.org/`</dd>
+                    </dl>
+                </section>
+                <section data-dfn-for="id">
+                    <h2><dfn>id</dfn></h2>
+                    <p>
+                        Die URL, durch die der Service identifiziert wird. Das ist in der Regel die Homepage. Auf dieser URL MUSS die Visitenkarte später abrufbar sein
+                    </p>
+                    <dl>
+                        <dt>Pflichtangabe</dt>
+                        <dd>ja</dd>
+                    </dl>
+                    <dl>
+                        <dt>Datentyp</dt>
+                        <dd>URL</dd>
+                    </dl>
+                </section>
+                <section data-dfn-for="type">
+                    <h2><dfn>type</dfn></h2>
+                    <p>
+                        Art der Webseite
+                    </p>
+                    <dl>
+                        <dt>Pflichtangabe</dt>
+                        <dd>ja</dd>
+                    </dl>
+                    <dl>
+                        <dt>Datentyp</dt>
+                        <dd>URL</dd>
+                    </dl>
+                    <dl>
+                        <dt>Wertebereich</dt>
+                        <dd>`https://schema.org/WebSite` und `https://schema.org/Service`</dd>
+                    </dl>
+                </section>
+                <section data-dfn-for="name">
+                    <h2><dfn>name</dfn></h2>
+                    <p>
+                        Name des Dienstes
+                    </p>
+                    <dl>
+                        <dt>Pflichtangabe</dt>
+                        <dd>ja</dd>
+                    </dl>
+                    <dl>
+                        <dt>Datentyp</dt>
+                        <dd>`String`</dd>
+                    </dl>
+                </section>
+                <section data-dfn-for="image">
+                    <h2><dfn>image</dfn></h2>
+                    <p>
+                        Icon des Dienstes. Kann genutzt werden, um beispielsweise Suchergebnisse zu kennzeichnen
+                    </p>
+                    <dl>
+                        <dt>Pflichtangabe</dt>
+                        <dd>nein</dd>
+                    </dl>
+                    <dl>
+                        <dt>Datentyp</dt>
+                        <dd>URL</dd>
+                    </dl>
+                    <dl>
+                        <dt>Wertebereich</dt>
+                        <dd>Dateiformat: `svg`, `png` (64x64px)</dd>
+                    </dl>
+                </section>
+                <section data-dfn-for="logo">
+                    <h2><dfn>logo</dfn></h2>
+                    <p>
+                        Logo des Dienstes
+                    </p>
+                    <dl>
+                        <dt>Pflichtangabe</dt>
+                        <dd>nein</dd>
+                    </dl>
+                    <dl>
+                        <dt>Datentyp</dt>
+                        <dd>URL</dd>
+                    </dl>
+                </section>
+                <section data-dfn-for="inLanguage">
+                    <h2><dfn>inLanguage</dfn></h2>
+                    <p>
+                        Sprache(n) des Hauptangebotes
+                    </p>
+                    <dl>
+                        <dt>Pflichtangabe</dt>
+                        <dd>nein</dd>
+                    </dl>
+                    <dl>
+                        <dt>Datentyp</dt>
+                        <dd>`String[]`</dd>
+                    </dl>
+                    <dl>
+                        <dt>Wertebereich</dt>
+                        <dd>[[IETFBCP47]]</dd>
+                    </dl>
+                </section>
+                <section data-dfn-for="description">
+                    <h2><dfn>description</dfn></h2>
+                    <p>
+                        Beschreibung des Dienstes
+                    </p>
+                    <dl>
+                        <dt>Pflichtangabe</dt>
+                        <dd>nein</dd>
+                    </dl>
+                    <dl>
+                        <dt>Datentyp</dt>
+                        <dd>`String`</dd>
+                    </dl>
+                </section>
+                <section data-dfn-for="serviceType">
+                    <h2><dfn>serviceType</dfn></h2>
+                    <p>
+                        Art des Services
+                    </p>
+                    <dl>
+                        <dt>Pflichtangabe</dt>
+                        <dd>ja</dd>
+                    </dl>
+                    <dl>
+                        <dt>Datentyp</dt>
+                        <dd>`String[]`</dd>
+                    </dl>
+                    <dl>
+                        <dt>Wertebereich</dt>
+                        <dd>`Repository`, `Referatory`, `Wiki`, `LMS`</dd>
+                    </dl>
+                </section>
+                <section>
+                    <h2>[...]</h2>
+                </section>
+            </section>
+            <section>
+                <h2>Vollständiges Beispiel</h2>
+                <pre class="example">
+                    {
+                        "@context":"http://schema.org/",
+                        "id":"https://playground.oer-contentbuffet.info/edu-sharing/",
+                        "type":[
+                           "Service",
+                           "WebSite"
+                        ],
+                        "name":"Jointly OER Playground",
+                        "image":"https://playground.oer-contentbuffet.info/edu-sharing/assets/images/sources/home.png",
+                        "logo":"https://playground.oer-contentbuffet.info/edu-sharing/assets/images/edu-white-alpha.svg",
+                        "inLanguage":[
+                           "de",
+                           "en"
+                        ],
+                        "description":"Das Verbundprojekt JOINTLY unterstützt OER-Akteure bei der Entwicklung und Verbreitung ihrer offenen Bildungsmaterialien. Es vermittelt die Beratung durch ExpertInnen zu Recht, Produktion, Didaktik und IT und organisiert Kooperationsaktivitäten zwischen OER-Akteuren. JOINTLY entwickelt gemeinschaftlich OER-förderliche Softwarewerkzeuge sowie Arbeits- und Vertriebsinstrumente.",
+                        "serviceType":"Repository",
+                        "audience":[
+                          "http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/teacher",
+                          "http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/peerTutor"
+                        ],
+                        "about": ["https://w3id.org/class/esc/n0541"],
+                        "isAccessibleForFree":true,
+                        "provider":[
+                           {
+                              "type":"Organization",
+                              "name":"JOINTLY – Qualifizierung und kooperative Unterstützung für OER – ein Buffet der Kooperation",
+                              "email":"info@jointly.info",
+                              "location":{
+                                 "type":"Place",
+                                 "geo":{
+                                    "type": "GeoCoordinates",
+                                    "longitude":11.3271834,
+                                    "latitude":50.9736279
+                                 },
+                                 "address":{
+                                    "type":"PostalAddress",
+                                    "addressCountry":"DE",
+                                    "streetAddress":"Bauhausstraße 7c",
+                                    "postalCode":"99423",
+                                    "addressLocality":"Weimar"
+                                 }
+                              }
+                           }
+                        ],
+                        "startDate":"2017-06-01",
+                        "availableChannel":[
+                           {
+                              "type": ["ServiceChannel", "WebAPI" ],
+                              "serviceType":"OAI-PMH",
+                              "serviceUrl":"https://playground.oer-contentbuffet.info/oai"
+                           },
+                           {
+                              "type": ["ServiceChannel", "WebAPI" ],
+                              "serviceUrl":"https://playground.oer-contentbuffet.info/edu-sharing/rest",
+                              "documentation":"https://playground.oer-contentbuffet.info/edu-sharing/swagger/index.html"
+                           }
+                        ],
+                        "schemaVersion":"20190305",
+                        "dateModified":"2019-03-05",
+                        "license":[
+                          "https://creativecommons.org/licenses/by-sa/4.0/deed.de",
+                          "https://creativecommons.org/licenses/by/4.0/deed.de"
+                        ],
+                        "sameAs":[
+                           "https://jointly.info/",
+                           "https://twitter.com/OER_JOINTLY"
+                        ]
+                     }
+                </pre>
+            </section>
+        </section>
+        <section id='conformance'>
+            <p>
+                Nachdem <a href="#service-card"></a> endgültig abgestimmt ist, wird ein JSON-Schema zur Validierung erstellt.
+            </p>
+        </section>
+        <section class="appendix">
+            <h2>Nomenklatur</h2>
+            <dl>
+                <dt><abbr title="Application Programming Interface">API</abbr></dt>
+                <dd>Application Programming Interface</dd>
+            </dl>
+            <dl>
+                <dt><abbr title="Dublin Core">DC</abbr></dt>
+                <dd>Dublin Core</dd>
+            </dl>
+            <dl>
+                <dt><abbr title="Digital Object Identifier">DOI</abbr></dt>
+                <dd>Digital Object Identifier</dd>
+            </dl>
+            <dl>
+                <dt><abbr title="Digital Repositories Interoperability">DRI</abbr></dt>
+                <dd>Digital Repositories Interoperability</dd>
+            </dl>
+            <dl>
+                <dt><abbr title="Globally Unique Identifier">GUID</abbr></dt>
+                <dd>Globally Unique Identifier</dd>
+            </dl>
+            <dl>
+                <dt><abbr title="Hypertext Transfer Protocol">HTTP</abbr></dt>
+                <dd>Hypertext Transfer Protocol</dd>
+            </dl>
+            <dl>
+                <dt><abbr title="JavaScript Object Notation">JSON</abbr></dt>
+                <dd>JavaScript Object Notation</dd>
+            </dl>
+            <dl>
+                <dt><abbr title="JavaScript Object Notation for Linked Data">JSON-LD</abbr></dt>
+                <dd>JavaScript Object Notation for Linked Data</dd>
+            </dl>
+            <dl>
+                <dt><abbr title="Learning Object Metadata">LOM</abbr></dt>
+                <dd>Learning Object Metadata</dd>
+            </dl>
+            <dl>
+                <dt><abbr title="Learning Object Repository">LOR</abbr></dt>
+                <dd>Learning Object Repository</dd>
+            </dl>
+            <dl>
+                <dt><abbr title="Open Archives Initiative – Protocol for Metadata Harvesting">OAI-PMH</abbr></dt>
+                <dd>Open Archives Initiative – Protocol for Metadata Harvesting</dd>
+            </dl>
+            <dl>
+                <dt><abbr title="Open Educational Resource">OER</abbr></dt>
+                <dd>Open Educational Resource</dd>
+            </dl>
+            <dl>
+                <dt><abbr title="Uniform Resource Locator">URL</abbr></dt>
+                <dd>Uniform Resource Locator</dd>
+            </dl>
+            <dl>
+                <dt><abbr title="World Wide Web Consortium">W3C</abbr></dt>
+                <dd>World Wide Web Consortium</dd>
+            </dl>
+        </section>
+    </body>
+</html>
+
