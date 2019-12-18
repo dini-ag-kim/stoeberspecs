@@ -9,26 +9,26 @@ Die Visitenkarte einer Applikation wird im JSON-LD-Format bereitgestellt, entwed
 Wird die Visitenkarte als JSON-Dokument angeboten, sollte der folgende `Content-Type` Header gesetzt werden:
 
 ```
-    Content-Type: application/ld+json
+Content-Type: application/ld+json
 ```
 
 Wenn das JSON-Dokument in die Startseite der Applikation eingebettet wird, geschieht dies mit Nutzung eines `script`-Tags vornehmlich im `head`-Bereich:
 
 ```
-    <script type="application/ld+json">
-        [...]
-    </script>
+<script type="application/ld+json">
+    [...]
+</script>
 ```
 
 Alternativ kann eine Discovery-URL in die Seite eingebunden werden:
 
 ```
-    <link rel="meta" type="application/ld+json" href="[...]" title="Service-Description" />
+<link rel="meta" type="application/ld+json" href="[...]" title="Service-Description" />
 ```
 
 Oder mittels `Link`-Header und Relation `meta` kommuniziert werden:
 
-```
-    HTTP/1.1 200 OK
-    Link: <[...]>; rel="meta"
+```example
+HTTP/1.1 200 OK
+Link: <[...]>; rel="meta"
 ```
