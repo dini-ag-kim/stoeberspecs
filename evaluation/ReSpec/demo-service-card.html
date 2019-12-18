@@ -43,46 +43,9 @@
         </section>
         <section id="sotd" data-include="contents/sotd.md" data-format="markdown">
         </section>
-        <section id="service-card">
+        <section id="technical-spec">
             <h2>Implementierung</h2>
-            <section>
-                <h2>Format</h2>
-                <p>
-                    Eine Visitenkarte wird durch ein JSON-Objekt repräsentiert. Dieses JSON-Objekt beinhaltet obligatorische wie optionale Schlüssel/Werte-Paare.
-                </p>
-                <p>
-                    Neben allgemeinen Informationen zur Applikation werden auch die speziellen Services mitgeteilt, die extern nutzbar sind (Suche, Harvesting, Tools).
-                </p>
-                <p>
-                    Die Visitenkarte einer Applikation wird im JSON-LD-Format bereitgestellt, entweder als eigenes JSON-Dokument oder eingebettet in die Startseite. Die URL, hinter der sich das Dokument befindet, kann dann abgefragt und die resultierenden Inhalte ausgewertet werden.
-                </p>
-                <p>
-                    Wird die Visitenkarte als JSON-Dokument angeboten, sollte der folgende `Content-Type` Header gesetzt werden:
-                </p>
-                <pre>
-                    Content-Type: application/ld+json
-                </pre>
-                <p>
-                    Wenn das JSON-Dokument in die Startseite der Applikation eingebettet wird, geschieht dies mit Nutzung eines `script`-Tags vornehmlich im `head`-Bereich:
-                </p>
-                <pre>
-                    &lt;script type="application/ld+json">
-                        [...]
-                    &lt;/script>
-                </pre>
-                <p>
-                    Alternativ kann eine Discovery-URL in die Seite eingebunden werden:
-                </p>
-                <pre>
-                    &lt;link rel="meta" type="application/ld+json" href="[...]" title="Service-Description" />
-                </pre>
-                <p>
-                    Oder mittels `Link`-Header und Relation `meta` kommuniziert werden:
-                </p>
-                <pre>
-                    HTTP/1.1 200 OK
-                    Link: &lt;[...]>; rel="meta"
-                </pre>
+            <section data-include="contents/format.md" data-format="markdown">
             </section>
             <section>
                 <h2>Vokabular/Datenstruktur</h2>
