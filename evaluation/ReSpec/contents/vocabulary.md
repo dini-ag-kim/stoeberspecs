@@ -23,7 +23,7 @@ This holds the JSON-LD context as a reference. This MUST be `https://schema.org/
 
 <section data-dfn-for="id">
 
-### <dfn>id</dfn>
+### [<dfn>id</dfn>](http://schema.org/id)
 
 An URL identifying the service described by the service card. The service card MUST be published at this URL.
 
@@ -32,8 +32,6 @@ An URL identifying the service described by the service card. The service card M
     <dd>mandatory</dd>
     <dt>Data Type</dt>
     <dd>URL</dd>
-    <dt>[[schema.org]] definition</dt>
-    <dd>http://schema.org/id</dd>
 </dl>
 
 </section>
