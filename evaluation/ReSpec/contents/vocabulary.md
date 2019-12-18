@@ -8,7 +8,7 @@ For each property a short description, the degree if obligation (`mandatory`, `o
 
 ### <dfn>@context</dfn>
 
-This holds the JSON-LD context as a reference. This MUST be `https://schema.org/`. Thus all properties of the service card can be prepended with `https://schema.org/` to get their full URI.
+This holds the JSON-LD context as a reference. This MUST be `https://schema.org/`.
 
 <dl>
     <dt>Obligation</dt>
@@ -144,7 +144,7 @@ The type(s) of service provided by the application. This MAY be one or more *Ser
     <dt>Data Type</dt>
     <dd>`String[]`</dd>
     <dt>Values</dt>
-    <dd>[Subtypes of http://schema.org/Service](http://schema.org/Service#subtypes), `Repository`, `Referatory`, `Wiki`, `LMS` or any other</dd>
+    <dd><a href="http://schema.org/Service#subtypes">Subtypes of http://schema.org/Service</a>, `Repository`, `Referatory`, `Wiki`, `LMS` or any other</dd>
 </dl>
 
 </section>
@@ -161,7 +161,7 @@ The target audience for the application. If given, this MUST be one or more *Edu
     <dt>Data Type</dt>
     <dd>`String[]` holding one or more URI</dd>
     <dt>Values</dt>
-    <dd>[LRMI Educational Audience Roles](http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/)</dd>
+    <dd><a href="http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/">LRMI Educational Audience Roles</a></dd>
 </dl>
 
 </section>
@@ -178,7 +178,7 @@ The subject(s) or topic(s) of resources provided by the application. This MAY be
     <dt>Data Type</dt>
     <dd>`String[]` holding one or more URI</dd>
     <dt>Values</dt>
-    <dd>[Subtypes of http://schema.org/Thing](http://schema.org/Thing#subtypes) or any other URI</dd>
+    <dd><a href="http://schema.org/Thing#subtypes">Subtypes of http://schema.org/Thing</a> or any other URI</dd>
 </dl>
 
 </section>
@@ -242,9 +242,9 @@ This describes the services provided by the application. This MUST be one or mor
     <dt>Obligation</dt>
     <dd>mandatory</dd>
     <dt>Data Type</dt>
-    <dd>`Object[]` holding one or more `Service` objects</dd>
+    <dd>`Object[]` holding one or more `Service` object</dd>
     <dt>Values</dt>
-    <dd>Object of types [ServiceChannel](https://schema.org/ServiceChannel) and [WebAPI](https://schema.org/WebAPI)</dd>
+    <dd>Object of types <a href="https://schema.org/ServiceChannel">ServiceChannel</a> and <a href="https://schema.org/WebAPI">WebAPI</a></dd>
 </dl>
 
 </section>
