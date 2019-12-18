@@ -1,0 +1,1 @@
+Mit dieser Harmonisierungsempfehlung sollen Lerninhalte-Services besser auffindbar und nutzbar werden, bspw. innerhalb einer vernetzten Infrastruktur. Lerninhalte, insbesondere freie, sogenannte OER, sollen über die Grenzen von Organisationen und Ländern hinweg kooperativer erstellbar, nutzbar und verwaltbar werden.

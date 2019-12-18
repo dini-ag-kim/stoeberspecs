@@ -11,8 +11,9 @@ Werkzeuge und Verfahren zur Standardisierung von OER-Metadaten
 ##### Vorteile
 
 - keine statische Generierung von HTML-Seiten
+- unterstützt Strukturierung in mehreren Dateien
 - für die Publikation von technischen Spezifikationen entwickelt
-- leicht zu lernen: HTML
+- leicht zu lernen: HTML oder Markdown
 
 ##### Nachteile
 
