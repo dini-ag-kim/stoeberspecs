@@ -16,7 +16,7 @@ The service card MUST be referenced in one of the following ways.
 
 1. A `script` tag containing the service card's JSON object MUST be placed in the `head` section of the homepage:
 
-<pre class="example">
+<pre>
     &lt;script type="application/ld+json">
         [...]
     &lt;/script>
@@ -26,7 +26,7 @@ OR
 
 2. A `link` tag referencing the service card's JSON file MUST be placed in the `head` section of the homepage:
 
-<pre class="example">
+<pre>
     &lt;link rel="meta" type="application/ld+json" href="[...]" title="Service-Description" />
 </pre>
 
