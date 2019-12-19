@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html>
     <head>
         <meta charset='utf-8'>
         <title>Service Card for Open Educational Resources</title>
@@ -54,6 +54,8 @@
 
         <section id="sotd" data-include="contents/sotd.md"></section>
 
+        <section id="conformance" data-include="contents/conformance.md"></section>
+
         <section id="technical-spec">
             <h2>Technical Specification</h2>
 
@@ -65,13 +67,24 @@
                 <h2>Vocabulary</h2>
             </section>
 
-            <section id="examples" data-include="contents/examples.md">
+            <section id="examples">
                 <h2>Examples</h2>
-            </section>
 
+                <section id="full-example">
+                    <h2>Full Example</h2>
+                    <pre class="example" data-include="examples/full-example.json" data-include-format="text"></pre>
+                </section>
+            </section>
         </section>
 
-        <section id="conformance" data-include="contents/conformance.md"></section>
+        <section id="schemas">
+            <h2>Metadata Schema</h2>
+
+            <section id="json-schema">
+                <h2>JSON Schema</h2>
+                <pre data-include="schemas/service-card.json" data-include-format="text"></pre>
+            </section>
+        </section>
 
         <section id="glossary" class="appendix" data-include="contents/glossary.md">
             <h2>Glossary</h2>
