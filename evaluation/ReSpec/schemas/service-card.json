@@ -1,3 +1,452 @@
 {
-    "this": "is just a demo"
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "OER Service",
+    "description": "A service providing OER content or OER-related functionalities on the web",
+    "type": "object",
+    "properties": {
+        "@context": {
+            "type": "string",
+            "format": "uri",
+            "enum": [
+                "http://schema.org/"
+            ]
+        },
+        "id": {
+            "description": "The service's unique identifier",
+            "type": "string",
+            "format": "uri"
+        },
+        "type": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "enum": [
+                    "Service",
+                    "WebSite"
+                ]
+            }
+        },
+        "name": {
+            "type": "string"
+        },
+        "image": {
+            "type": "string",
+            "format": "uri"
+        },
+        "logo": {
+            "type": "string",
+            "format": "uri"
+        },
+        "inLanguage": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/Language"
+            }
+        },
+        "description": {
+            "type": "string"
+        },
+        "serviceType": {
+            "type": "string"
+        },
+        "audience": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "format": "uri",
+                "enum": [
+                    "http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/administrator",
+                    "http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/generalPublic",
+                    "http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/mentor",
+                    "http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/parent",
+                    "http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/peerTutor",
+                    "http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/professional",
+                    "http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/student",
+                    "http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/teacher"
+                ]
+            }
+        },
+        "about": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "format": "uri"
+            }
+        },
+        "isAccessibleForFree": {
+            "type": "boolean"
+        },
+        "provider": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": "string",
+                        "enum": [
+                            "Person",
+                            "Organization"
+                        ]
+                    },
+                    "id": {
+                        "type": "string",
+                        "format": "uri"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "email": {
+                        "type": "string",
+                        "format": "email"
+                    },
+                    "location": {
+                        "type": "object",
+                        "properties": {
+                            "type": {
+                                "type": "string",
+                                "enum": [
+                                    "Place"
+                                ]
+                            },
+                            "geo": {
+                                "type": "object",
+                                "properties": {
+                                    "type": {
+                                        "type": "string",
+                                        "enum": [
+                                            "GeoCoordinates"
+                                        ]
+                                    },
+                                    "lat": {
+                                        "title": "Geo Coordinates, latitude",
+                                        "type": "number"
+                                    },
+                                    "lon": {
+                                        "title": "Geo Coordinates, longitude",
+                                        "type": "number"
+                                    }
+                                }
+                            },
+                            "address": {
+                                "type": "object",
+                                "properties": {
+                                    "type": {
+                                        "type": "string",
+                                        "enum": [
+                                            "PostalAddress"
+                                        ]
+                                    },
+                                    "streetAddress": {
+                                        "title": "Straße",
+                                        "type": "string"
+                                    },
+                                    "postalCode": {
+                                        "title": "Postleitzahl",
+                                        "type": "string"
+                                    },
+                                    "postOfficeBoxNumber": {
+                                        "title": "Postfach",
+                                        "type": "string"
+                                    },
+                                    "addressLocality": {
+                                        "title": "Ort",
+                                        "type": "string"
+                                    },
+                                    "addressCountry": {
+                                        "title": "Country",
+                                        "description": "A country, represented by its ISO country code",
+                                        "type": "string",
+                                        "enum": [
+                                            "AT",
+                                            "CH",
+                                            "DE"
+                                        ]
+                                    }
+                                },
+                                "additionalProperties": false
+                            }
+                        }
+                    }
+                },
+                "required": [
+                    "name"
+                ]
+            }
+        },
+        "startDate": {
+            "title": "Start-Datum",
+            "description": "Start-Datum des Services im ISO-8601-Format",
+            "type": "string",
+            "pattern": "^([\\+-]?\\d{4}(?!\\d{2}\\b))((-?)((0[1-9]|1[0-2])(\\3([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\17[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?$"
+        },
+        "availableChannel": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": "array",
+                        "items": [
+                            {
+                                "type": "string",
+                                "enum": [
+                                    "ServiceChannel",
+                                    "WebAPI"
+                                ]
+                            },
+                            {
+                                "type": "string",
+                                "enum": [
+                                    "ServiceChannel",
+                                    "WebAPI"
+                                ]
+                            }
+                        ]
+                    },
+                    "serviceType": {
+                        "type": "string"
+                    },
+                    "serviceUrl": {
+                        "type": "string",
+                        "format": "uri"
+                    },
+                    "documentation": {
+                        "type": "string",
+                        "format": "uri"
+                    }
+                }
+            }
+        },
+        "schemaVersion": {
+            "type": "string",
+            "format": "uri"
+        },
+        "dateModified": {
+            "title": "Letzte Änderung",
+            "description": "Letztes Änderungsdatum der Visitenkarte im ISO-8601-Format",
+            "type": "string",
+            "pattern": "^([\\+-]?\\d{4}(?!\\d{2}\\b))((-?)((0[1-9]|1[0-2])(\\3([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\17[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?$"
+        },
+        "license": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "format": "uri"
+            }
+        },
+        "sameAs": {
+            "title": "Siehe auch",
+            "description": "Link zu anderen Profilen des Services",
+            "type": "array",
+            "items": {
+                "type": "string",
+                "format": "uri"
+            }
+        }
+    },
+    "definitions": {
+        "Country": {
+            "$schema": "http://json-schema.org/draft-04/schema#",
+            "title": "Country",
+            "description": "A country, represented by its ISO country code",
+            "type": "string",
+            "enum": [
+                "AT",
+                "CH",
+                "DE"
+            ]
+        },
+        "Language": {
+            "$schema": "http://json-schema.org/draft-04/schema#",
+            "title": "Language",
+            "description": "A language, represented by its ISO language code",
+            "type": "string",
+            "enum": [
+                "aa",
+                "ab",
+                "ae",
+                "af",
+                "ak",
+                "am",
+                "an",
+                "ar",
+                "as",
+                "av",
+                "ay",
+                "az",
+                "ba",
+                "be",
+                "bg",
+                "bh",
+                "bi",
+                "bm",
+                "bn",
+                "bo",
+                "br",
+                "bs",
+                "ca",
+                "ce",
+                "ch",
+                "co",
+                "cr",
+                "cs",
+                "cu",
+                "cv",
+                "cy",
+                "da",
+                "de",
+                "dv",
+                "dz",
+                "ee",
+                "el",
+                "en",
+                "eo",
+                "es",
+                "et",
+                "eu",
+                "fa",
+                "ff",
+                "fi",
+                "fj",
+                "fo",
+                "fr",
+                "fy",
+                "ga",
+                "gd",
+                "gl",
+                "gn",
+                "gu",
+                "gv",
+                "ha",
+                "hi",
+                "ho",
+                "hr",
+                "ht",
+                "hu",
+                "hy",
+                "hz",
+                "ia",
+                "ie",
+                "ig",
+                "ii",
+                "ik",
+                "io",
+                "is",
+                "it",
+                "iu",
+                "ja",
+                "jv",
+                "ka",
+                "kg",
+                "ki",
+                "kj",
+                "kk",
+                "kl",
+                "km",
+                "kn",
+                "ko",
+                "kr",
+                "ks",
+                "ku",
+                "kv",
+                "kw",
+                "ky",
+                "la",
+                "lb",
+                "lg",
+                "li",
+                "ln",
+                "lo",
+                "lt",
+                "lu",
+                "lv",
+                "mg",
+                "mh",
+                "mi",
+                "mk",
+                "ml",
+                "mn",
+                "mo",
+                "mr",
+                "ms",
+                "mt",
+                "my",
+                "na",
+                "nb",
+                "nd",
+                "ne",
+                "ng",
+                "nl",
+                "nn",
+                "no",
+                "nr",
+                "nv",
+                "nvi",
+                "ny",
+                "oc",
+                "oj",
+                "om",
+                "or",
+                "os",
+                "pa",
+                "pi",
+                "pl",
+                "ps",
+                "pt",
+                "qu",
+                "rm",
+                "rn",
+                "ro",
+                "ru",
+                "rw",
+                "sa",
+                "sc",
+                "sd",
+                "se",
+                "sg",
+                "si",
+                "sk",
+                "sl",
+                "sm",
+                "smi",
+                "sn",
+                "so",
+                "sq",
+                "sr",
+                "ss",
+                "st",
+                "su",
+                "sv",
+                "sw",
+                "ta",
+                "te",
+                "tg",
+                "th",
+                "ti",
+                "tk",
+                "tl",
+                "tn",
+                "to",
+                "tr",
+                "ts",
+                "tt",
+                "tw",
+                "ty",
+                "ug",
+                "uk",
+                "ur",
+                "uz",
+                "ve",
+                "vi",
+                "vo",
+                "wa",
+                "wo",
+                "xh",
+                "yo",
+                "za",
+                "zh",
+                "zu"
+            ]
+        }
+    }
 }
