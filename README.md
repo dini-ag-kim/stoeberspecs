@@ -24,6 +24,7 @@ Werkzeuge und Verfahren zur Standardisierung von OER-Metadaten
 
 - W3C-spezifisches Rendering nur durch eigenes [Profil](https://github.com/w3c/respec/wiki/Developers-Guide#custom-profiles) änderbar
 - [Multilingualität](https://github.com/w3c/respec/blob/develop/src/core/l10n.js) wird grundsätzlich unterstützt, aber derzeit keine deutsche Übersetzung
+  - Deutsche Übersetzung hinzugefügt: https://github.com/w3c/respec/pull/2687
 
 ## AP2: Prozess zur Spezifikation eines Metadatenschemas
 
