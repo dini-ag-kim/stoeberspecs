@@ -1,1 +1,0 @@
-This recommendation for harmonization aims to make services which provide educational resources more accessable, e. g. as part of a distributed infrastructure. Especially Open Educational Resources (OER) should be easier created, curated, used and managed across institutional and national borders.
