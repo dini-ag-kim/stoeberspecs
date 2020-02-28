@@ -36,10 +36,10 @@ Ein symbolischer Link `latest` sollte zudem immer auf die neueste publizierte Fa
 
 * **Service Card for Open Educational Resources**
     * [GitHub](https://github.com/dini-ag-kim/oer-service-card)
-    * [Publikation mit ReSpec](https://w3id.org/dini-ag-kim/oer-service-card/)
+    * [Publikation mit ReSpec](https://w3id.org/kim/oer-service-card/)
 * **LOM for Higher Education OER Repositories**
     * [GitHub](https://github.com/dini-ag-kim/hs-oer-lom-profil)
-    * [Publikation mit ReSpec](https://w3id.org/dini-ag-kim/hs-oer-lom-profil/)
+    * [Publikation mit ReSpec](https://w3id.org/kim/hs-oer-lom-profil/)
 * **Blanko-Vorlage für neue Spezifikationen**
     * [GitHub](https://github.com/dini-ag-kim/oer-stoeberspecs/blob/master/ReSpec/index.html)
     * [Publikation mit ReSpec](https://dini-ag-kim.github.io/oer-stoeberspecs/ReSpec/)
@@ -52,7 +52,7 @@ Auch Vokabulare und Ontologien werden auf [GitHub](https://github.com/dini-ag-ki
 
 * **SKOS-Version der Destatis-Systematik der Fächergruppen, Studienbereiche und Studienfächer**
     * [GitHub](https://github.com/dini-ag-kim/hochschulfaechersystematik)
-    * [Publikation mit SkoHub-Vocabs](https://w3id.org/class/hochschulfaechersystematik/scheme#)
+    * [Publikation mit SkoHub-Vocabs](https://w3id.org/kim/hochschulfaechersystematik/scheme)
 
 ### Kommunikation
 
