@@ -48,6 +48,14 @@ Ein symbolischer Link `latest` sollte zudem immer auf die neueste publizierte Fa
 
 Auch Vokabulare und Ontologien werden auf [GitHub](https://github.com/dini-ag-kim) in einem eigenen Repository abgelegt und dort versioniert und gepflegt. Als Format sollte das [Simple Knowledge Organization System (SKOS)](https://www.w3.org/2004/02/skos/) verwendet werden, wobei die Kodierung idealerweise in [Turtle](https://www.w3.org/TR/turtle/)-Syntax erfolgen sollte. Die Publikation erfolgt anschließend mit [SkoHub-Vocabs](https://github.com/hbz/skohub-vocabs), einer grafischen Präsentation der Ontologie mit weitergehenden Möglichkeiten wie einer Suchfunktion (siehe [Beispiele](#example-vocab)).
 
+#### Einführung in SKOS
+
+Die folgende Einführung enthält auch ein Tutorial zur Erstellung und Veröffentlichung eines SKOS-Vokabulars.
+
+* **Einführung in SKOS für den Bereich Open Educational Resources (OER)**
+    * [GitHub](https://github.com/dini-ag-kim/oer-skos-einfuehrung)
+    * [Publikation](https://dini-ag-kim.github.io/oer-skos-einfuehrung/)
+
 #### <a id="example-vocab"></a>Beispiele
 
 * **SKOS-Version der Destatis-Systematik der Fächergruppen, Studienbereiche und Studienfächer**
@@ -81,7 +89,3 @@ Alternativ können Änderungsvorschläge natürlich auch auf herkömmlichem Weg 
 ### Wiki
 
 Für jedes GitHub-Repository kann in den Einstellungen ein einfaches [Wiki](https://help.github.com/en/github/building-a-strong-community/about-wikis) aktiviert werden. Dieses kann verwendet werden, um mit der Arbeit am jeweiligen Dokument in Verbindung stehende Dokumente zentral und öffentlich abzulegen (z. B. Protokolle von Videokonferenzen).
-
-## Einführung in SKOS
-
-* [Erste Überlegungen in CodiMD-Pad](https://pad.gwdg.de/D-QEi-z6RleT1kxBccpWww)
