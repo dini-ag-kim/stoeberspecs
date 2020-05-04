@@ -53,8 +53,8 @@ Auch Vokabulare und Ontologien werden auf [GitHub](https://github.com/dini-ag-ki
 Die folgende Einführung enthält auch ein Tutorial zur Erstellung und Veröffentlichung eines SKOS-Vokabulars.
 
 * **Einführung in SKOS für den Bereich Open Educational Resources (OER)**
-    * [GitHub](https://github.com/dini-ag-kim/oer-skos-einfuehrung)
-    * [Publikation](https://dini-ag-kim.github.io/oer-skos-einfuehrung/)
+    * [GitHub](https://github.com/dini-ag-kim/skos-einfuehrung)
+    * [Publikation](https://dini-ag-kim.github.io/skos-einfuehrung/)
 
 #### <a id="example-vocab"></a>Beispiele
 
