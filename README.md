@@ -78,9 +78,9 @@ Um die Pflege der Standards, Spezifikationen, Empfehlungen und Vokabulare auf Gi
 
 Der oder die Maintainer entscheidet letztlich auch über den Zeitpunkt der Publikation einer neuen Version des betreffenden Dokuments, führt die entsprechenden strukturellen Änderungen im GitHub-Repository durch und verantwortet die Endredaktion.
 
-### Pull Requests
+### Änderungsvorschläge in Pull Requests & Annotationen
 
-Um die Arbeit des oder der Maintainer so einfach wie möglich zu gestalten, sollten Änderungsvorschläge nach Möglichkeit immer in Form eines [Pull Requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests) auf GitHub eingereicht werden. Auf diese Weise kann der Änderungsvorschlag öffentlich kommentiert, ggf. weiter verbessert und schließlich auf Knopfdruck durch den oder die Maintainer übernommen werden.
+Um die Arbeit des oder der Maintainer so einfach wie möglich zu gestalten, sollten Änderungsvorschläge nach Möglichkeit immer in Form eines [Pull Requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests) auf GitHub eingereicht werden. Auf diese Weise kann der Änderungsvorschlag öffentlich kommentiert, ggf. weiter verbessert und schließlich auf Knopfdruck durch den oder die Maintainer übernommen werden. Als niedrigschwelligere Variante können Vorschläge auch – wie oben erwähnt – am Entwurf mit Hilfe des Annotationsdiensts hypothes.is ergänzt werden. Diese können dort diskutiert und zu gegebenem Zeitpunkt vom Maintainer in einen Pull Request überführt werden.
 
 Wichtig ist, dass *Pull Requests* immer nur Änderungen an der Entwurfsfassung im Verzeichnis `draft` beinhalten, da einmal publizierte Versionen nicht mehr substantiell geändert werden sollten. Ausnahmen stellen hier nur einfache Rechtschreibfehler oder ähnliches dar, die natürlich korrigiert werden dürfen.
 
