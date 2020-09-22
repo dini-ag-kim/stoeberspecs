@@ -61,7 +61,7 @@ Die folgende Einführung enthält auch ein Tutorial zur Erstellung und Veröffen
 * **SKOS-Version der Destatis-Systematik der Fächergruppen, Studienbereiche und Studienfächer**
     * [GitHub](https://github.com/dini-ag-kim/hochschulfaechersystematik)
     * [Publikation mit SkoHub-Vocabs](https://w3id.org/kim/hochschulfaechersystematik/scheme)
-* **Hochschulcampus Ressourcentypen (HCRT), eine Werteliste für Typen von Lernressourcen **
+* **Hochschulcampus Ressourcentypen (HCRT)**, eine Werteliste für Typen von Lernressourcen
     * [GitHub](https://github.com/dini-ag-kim/hcrt)
     * [Publikation mit SkoHub-Vocabs](https://w3id.org/kim/hcrt/scheme)
 
