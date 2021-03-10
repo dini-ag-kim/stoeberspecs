@@ -39,9 +39,9 @@ Ein symbolischer Link `latest` sollte zudem immer auf die neueste publizierte Fa
     * [GitHub](https://github.com/dini-ag-kim/oer-stoeberspecs/blob/master/ReSpec/index.html)
     * [Publikation mit ReSpec](https://dini-ag-kim.github.io/oer-stoeberspecs/ReSpec/)
 
-### Vokabulare, Ontologien
+### Kontrollierte Vokabulare
 
-Auch Vokabulare und Ontologien werden auf [GitHub](https://github.com/dini-ag-kim) in einem eigenen Repository abgelegt und dort versioniert und gepflegt. Als Format sollte das [Simple Knowledge Organization System (SKOS)](https://www.w3.org/2004/02/skos/) verwendet werden, wobei die Kodierung idealerweise in [Turtle](https://www.w3.org/TR/turtle/)-Syntax erfolgen sollte. Die Publikation erfolgt anschließend mit [SkoHub-Vocabs](https://github.com/hbz/skohub-vocabs), einer grafischen Präsentation der Ontologie mit weitergehenden Möglichkeiten wie einer Suchfunktion (siehe [Beispiele](#example-vocab)).
+Auch kontrollierte Vokabulare – von einfachen Wertelisten bis zu mehrstufigen Klassifikationen – werden auf [GitHub](https://github.com/dini-ag-kim) in einem eigenen Repository abgelegt und dort versioniert und gepflegt. Als Format sollte das [Simple Knowledge Organization System (SKOS)](https://www.w3.org/2004/02/skos/) verwendet werden, wobei die Kodierung idealerweise in [Turtle](https://www.w3.org/TR/turtle/)-Syntax erfolgen sollte. Die Publikation erfolgt anschließend mit [SkoHub-Vocabs](https://github.com/hbz/skohub-vocabs), einer grafischen Präsentation desVokabulars mit weitergehenden Möglichkeiten wie einer Suchfunktion (siehe [Beispiele](#example-vocab)).
 
 #### Einführung in SKOS
 
