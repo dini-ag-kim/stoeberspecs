@@ -1,4 +1,4 @@
-# StöberSpecs – Werkzeuge und Verfahren zur Standardisierung von OER-Metadaten
+# StöberSpecs – Werkzeuge und Verfahren zur Standardisierung von Metadaten
 
 ## Die DINI AG KIM als Plattform zur Spezifikation von Metadatenstandards im Bildungsbereich
 
