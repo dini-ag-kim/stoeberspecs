@@ -2,7 +2,7 @@
 
 ## Die DINI AG KIM als Plattform zur Spezifikation von Metadatenstandards im Bildungsbereich
 
-Ausgestattet mit Fördermitteln von Bund und Ländern beschäftigen sich immer mehr Akteure und Projekte im Schul- und Hochschulbereich mit dem Aufbau von Infrastrukturen zur Erstellung, Publikation und zum Teilen von [Open Educational Resources (OER)](https://de.wikipedia.org/wiki/Open_Educational_Resources). Innerhalb einer solchen Infrastruktur spielen Metadaten – strukturierte Beschreibungen, die Informationen über bestimmte Merkmale der beschriebenen Dinge erfassen – eine zentrale Rolle.
+Ausgestattet mit Fördermitteln von Bund und Ländern beschäftigen sich immer mehr Akteure und Projekte im Schul- und Hochschulbereich mit dem Aufbau von Infrastrukturen zur Erstellung, Publikation und zum Teilen von Bildungsmaterialien, insbesondere [Open Educational Resources (OER)](https://de.wikipedia.org/wiki/Open_Educational_Resources). Innerhalb einer solchen Infrastruktur spielen Metadaten – strukturierte Beschreibungen, die Informationen über bestimmte Merkmale der beschriebenen Dinge erfassen – eine zentrale Rolle.
 
 Dementsprechend stellt sich derzeit in verschiedenen Kontexten die Frage, wie OER mit Metadaten versehen werden sollten. Damit keine Parallelarbeiten stattfinden und vor allen damit die Anwendungen möglichst qualitative und homogene Metadaten aufweisen – etwa zum Zwecke der Zusammenführung und des Aufbaus übergreifender Recherchedienste – ist eine gemeinsame, fortdauernde, nachhaltige Entwicklung und Pflege von Metadatenstandards geboten.
 
