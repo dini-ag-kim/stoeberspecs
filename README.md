@@ -36,8 +36,8 @@ Ein symbolischer Link `latest` sollte zudem immer auf die neueste publizierte Fa
     * [GitHub](https://github.com/dini-ag-kim/hs-oer-lom-profil)
     * [Publikation mit ReSpec](https://w3id.org/kim/hs-oer-lom-profil/)
 * **Blanko-Vorlage für neue Spezifikationen**
-    * [GitHub](https://github.com/dini-ag-kim/oer-stoeberspecs/blob/master/ReSpec/index.html)
-    * [Publikation mit ReSpec](https://dini-ag-kim.github.io/oer-stoeberspecs/ReSpec/)
+    * [GitHub](https://github.com/dini-ag-kim/stoeberspecs/blob/master/ReSpec/index.html)
+    * [Publikation mit ReSpec](https://dini-ag-kim.github.io/stoeberspecs/ReSpec/)
 
 ### Kontrollierte Vokabulare
 
