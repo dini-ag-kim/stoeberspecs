@@ -89,7 +89,7 @@ Alternativ können Änderungsvorschläge natürlich auch auf herkömmlichem Weg 
 Für die Publikation einer neuen Version eines mit ReSpec publizierten Dokuments sind durch die Maintainer\*innen folgende Schritte zu beachten:
 
 1. Einen neuen Ordner anlegen und die Inhalte des Draft-Ordners da reinkopieren.
-2. Den symbolischen Link aktualisieren (ist unter Windows etwas kniffelig - Google hilft!).
+2. Den symbolischen Link aktualisieren (Linux: `ln -sfn yyyymmdd latest`, Windows: etwas kniffelig, Google hilft).
 3. In der neuen Version ein paar Änderungen vornehmen:
    1. hypothes.is-Einbindung aus der index.html rausnehmen.
    2. In der ReSpec-Konfig ganz am Anfang das Release-Datum aktualisieren.
