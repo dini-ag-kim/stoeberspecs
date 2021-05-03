@@ -84,6 +84,20 @@ Wichtig ist, dass *Pull Requests* immer nur Änderungen an der Entwurfsfassung i
 
 Alternativ können Änderungsvorschläge natürlich auch auf herkömmlichem Weg etwa per Mailingliste an die Maintainer\*innen geschickt werden, der diese dann jedoch wiederum als *Pull Request* auf GitHub dokumentieren sollte.
 
+### Publikation einer neuen Version mit ReSpec
+
+Für die Publikation einer neuen Version eines mit ReSpec publizierten Dokuments sind durch die Maintainer\*innen folgende Schritte zu beachten:
+
+1. Einen neuen Ordner anlegen und die Inhalte des Draft-Ordners da reinkopieren.
+2. Den symbolischen Link aktualisieren (ist unter Windows etwas kniffelig - Google hilft!).
+3. In der neuen Version ein paar Änderungen vornehmen:
+   1. hypothes.is-Einbindung aus der index.html rausnehmen.
+   2. In der ReSpec-Konfig ganz am Anfang das Release-Datum aktualisieren.
+   3. In der ReSpec-Konfig ganz am Anfang den Status von "unofficial" auf "base" ändern.
+   4. In der ReSpec-Konfig unter "otherLinks" den Link zur neuen Version ergänzen.
+4. Falls die Spec auch vollständige Beispiele enthält, sollten die natürlich auch auf das Schema ihrer jeweiligen Version verweisen. Da müssen die Links in @schemaLocation also ggf. auch noch von "/draft/" auf das jeweilige Release geändert werden.
+5. Wenn ansonsten darauf geachtet wird, dass in der Spec nur relative Links verwendet werden, muss nichts weiter angepasst werden. Eventuell noch die neue Version in der README.md ergänzen, falls irgendjemand über die GitHub-Pages-Startseite kommt.
+
 ### Wiki
 
 Für jedes GitHub-Repository kann in den Einstellungen ein einfaches [Wiki](https://help.github.com/en/github/building-a-strong-community/about-wikis) aktiviert werden. Dieses kann verwendet werden, um mit der Arbeit am jeweiligen Dokument in Verbindung stehende Dokumente zentral und öffentlich abzulegen (z. B. Protokolle von Videokonferenzen).
