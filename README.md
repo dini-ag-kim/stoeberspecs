@@ -94,7 +94,7 @@ Für die Publikation einer neuen Version eines mit ReSpec publizierten Dokuments
    1. hypothes.is-Einbindung aus der index.html rausnehmen.
    2. In der ReSpec-Konfig ganz am Anfang das Release-Datum aktualisieren.
    3. In der ReSpec-Konfig ganz am Anfang den Status von "unofficial" auf "base" ändern.
-   4. In der ReSpec-Konfig unter "otherLinks" den Link zur neuen Version ergänzen.
+   4. In der ReSpec-Konfig unter "otherLinks" den Link zur neuen Version ergänzen und die Auskommentierung entfernen.
 4. Falls die Spec auch vollständige Beispiele enthält, sollten die natürlich auch auf das Schema ihrer jeweiligen Version verweisen. Da müssen die Links in @schemaLocation also ggf. auch noch von "/draft/" auf das jeweilige Release geändert werden.
 5. Wenn ansonsten darauf geachtet wird, dass in der Spec nur relative Links verwendet werden, muss nichts weiter angepasst werden. Eventuell noch die neue Version in der README.md ergänzen, falls irgendjemand über die GitHub-Pages-Startseite kommt.
 
