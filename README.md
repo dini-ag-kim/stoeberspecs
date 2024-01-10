@@ -97,6 +97,7 @@ Für die Publikation einer neuen Version eines mit ReSpec publizierten Dokuments
    4. In der ReSpec-Konfig unter "otherLinks" den Link zur neuen Version ergänzen und die Auskommentierung entfernen.
 4. Falls die Spec auch vollständige Beispiele enthält, sollten die natürlich auch auf das Schema ihrer jeweiligen Version verweisen. Da müssen die Links in @schemaLocation also ggf. auch noch von "/draft/" auf das jeweilige Release geändert werden.
 5. Wenn ansonsten darauf geachtet wird, dass in der Spec nur relative Links verwendet werden, muss nichts weiter angepasst werden. Eventuell noch die neue Version in der README.md ergänzen, falls irgendjemand über die GitHub-Pages-Startseite kommt.
+6. Sobald die Publikation der neuen Version vollständig abgeschlossen ist, wird ein [Git Tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging) für die Version vergeben sowie auf GitHub ein [Release](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository) für diese Version angelegt ([Beispiel](https://github.com/dini-ag-kim/amb/releases/tag/20231019)).
 
 ### Wiki
 
