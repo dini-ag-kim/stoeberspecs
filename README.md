@@ -79,13 +79,13 @@ Um die Pflege der Standards, Spezifikationen, Empfehlungen und Vokabulare auf Gi
 
 Der oder die Maintainer\*innen entscheiden letztlich auch über den Zeitpunkt der Publikation einer neuen Version des betreffenden Dokuments, führen die entsprechenden strukturellen Änderungen im GitHub-Repository durch und verantworten die Endredaktion.
 
-### Änderungsvorschläge in Pull Requests & Annotationen
+### Änderungsvorschläge in Pull Requests
 
 Um die Arbeit der Maintainer\*innen so einfach wie möglich zu gestalten, sollten Änderungsvorschläge nach Möglichkeit immer in Form eines [Pull Requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests) auf GitHub eingereicht werden. Auf diese Weise kann der Änderungsvorschlag öffentlich kommentiert, ggf. weiter verbessert und schließlich auf Knopfdruck durch die Maintainer\*innen übernommen werden.
 
-Wichtig ist, dass *Pull Requests* immer nur Änderungen an der Entwurfsfassung im Verzeichnis `draft` beinhalten, da einmal publizierte Versionen nicht mehr substantiell geändert werden sollten. Ausnahmen stellen hier nur einfache Rechtschreibfehler oder ähnliches dar, die natürlich korrigiert werden dürfen.
+Wichtig ist, dass *Pull Requests* bei ReSpec immer nur Änderungen an der Entwurfsfassung im Verzeichnis `draft` beinhalten, da einmal publizierte Versionen nicht mehr substantiell geändert werden sollten. Ausnahmen stellen hier nur einfache Rechtschreibfehler oder ähnliches dar, die natürlich korrigiert werden dürfen.
 
-Alternativ können Änderungsvorschläge natürlich auch auf herkömmlichem Weg etwa per Mailingliste an die Maintainer\*innen geschickt werden, der diese dann jedoch wiederum als *Pull Request* auf GitHub dokumentieren sollte.
+Alternativ können Änderungsvorschläge natürlich auch auf herkömmlichem Weg etwa per Mailingliste an die Maintainer\*innen geschickt werden, die diese dann jedoch wiederum als *Pull Request* auf GitHub dokumentieren sollten.
 
 ### Publikation einer neuen Version mit ReSpec
 
