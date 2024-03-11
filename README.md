@@ -32,9 +32,12 @@ Ein symbolischer Link `latest` sollte zudem immer auf die neueste publizierte Fa
 
 #### <a id="example-specs"></a>Beispiele
 
+* **Allgemeines Metadatenprofil für Bildungsressourcen (AMB)**
+    * [GitHub](https://github.com/dini-ag-kim/amb)
+    * [Publikation mit ReSpec](https://w3id.org/kim/amb/latest/)
 * **LOM for Higher Education OER Repositories**
     * [GitHub](https://github.com/dini-ag-kim/hs-oer-lom-profil)
-    * [Publikation mit ReSpec](https://w3id.org/kim/hs-oer-lom-profil/)
+    * [Publikation mit ReSpec](https://w3id.org/kim/hs-oer-lom-profil/latest/)
 * **Blanko-Vorlage für neue Spezifikationen**
     * [GitHub](https://github.com/dini-ag-kim/stoeberspecs/blob/master/ReSpec/index.html)
     * [Publikation mit ReSpec](https://dini-ag-kim.github.io/stoeberspecs/ReSpec/)
