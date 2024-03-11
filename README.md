@@ -24,7 +24,7 @@ Durch die Verwendung von *ReSpec* können die Dokumente mit einer Mischung aus H
 
 #### Versionierung
 
-Für jede Spezifikation, Standard oder Empfehlung sollte ein eigenes GitHub-Repository angelegt werden. In diesem sollte sich in einem Verzeichnis `draft` die aktuelle Entwurfsfassung des Dokuments befinden, die kommentiert werden kann. Zur niedrigschwelligen Kommentierung empfiehlt es sich, den Annotationsdienst [hypothes.is](https://web.hypothes.is/) einzubinden.
+Für jede Spezifikation, Standard oder Empfehlung sollte ein eigenes GitHub-Repository angelegt werden. In diesem sollte sich in einem Verzeichnis `draft` die aktuelle Entwurfsfassung des Dokuments befinden, die kommentiert werden kann.
 
 Jede publizierte Version des Dokuments sollte in einem eigenen Verzeichnis abgelegt werden, das nach der jeweiligen Versionsbezeichnung benannt ist. Es empfiehlt sich, die Versionen etwa nach ihrem Veröffentlichungsdatum zu benennen (z. B. `20200131`).
 
@@ -44,7 +44,7 @@ Ein symbolischer Link `latest` sollte zudem immer auf die neueste publizierte Fa
 
 ### Kontrollierte Vokabulare
 
-Auch kontrollierte Vokabulare – von einfachen Wertelisten bis zu mehrstufigen Klassifikationen – werden auf [GitHub](https://github.com/dini-ag-kim) in einem eigenen Repository abgelegt und dort versioniert und gepflegt. Als Format sollte das [Simple Knowledge Organization System (SKOS)](https://www.w3.org/2004/02/skos/) verwendet werden, wobei die Kodierung idealerweise in [Turtle](https://www.w3.org/TR/turtle/)-Syntax erfolgen sollte. Die Publikation erfolgt anschließend mit [SkoHub-Vocabs](https://github.com/hbz/skohub-vocabs), einer grafischen Präsentation desVokabulars mit weitergehenden Möglichkeiten wie einer Suchfunktion (siehe [Beispiele](#example-vocab)).
+Auch kontrollierte Vokabulare – von einfachen Wertelisten bis zu mehrstufigen Klassifikationen – werden auf [GitHub](https://github.com/dini-ag-kim) in einem eigenen Repository abgelegt und dort versioniert und gepflegt. Als Format sollte das [Simple Knowledge Organization System (SKOS)](https://www.w3.org/2004/02/skos/) verwendet werden, wobei die Kodierung idealerweise in [Turtle](https://www.w3.org/TR/turtle/)-Syntax erfolgen sollte. Die Publikation erfolgt anschließend mit [SkoHub-Vocabs](https://github.com/skohub-io/skohub-vocabs), einer grafischen Präsentation des Vokabulars mit weitergehenden Möglichkeiten wie einer Suchfunktion (siehe [Beispiele](#example-vocab)).
 
 #### Einführung in SKOS
 
@@ -67,7 +67,7 @@ Die folgende Einführung enthält auch ein Tutorial zur Erstellung und Veröffen
 
 Zur Kommunikation wird neben gelegentlichen Präsenztreffen und monatlichen Videokonferenzen vor allem die Mailingliste der jeweiligen Gruppe verwendet. Die Listen sind öffentlich und können so von jeder/m Interessierten abonniert werden.
 
-Die Arbeit an konkreten Spezifikationen und Standards erfolgt zusätzlich über die direkte Kommentierung der jeweiligen Entwurfsfassung (siehe oben). Diese sollte daher immer im Web publiziert werden und mit Annotationsmöglichkeiten versehen werden. Empfohlen wird neben der Verwendung der regulären GitHub-Werkzeuge wie [Issues](https://guides.github.com/features/issues/) auch die Einbindung des niedrigschwelligen Dienstes [hypothes.is](https://web.hypothes.is/).
+Die Arbeit an konkreten Spezifikationen und Standards erfolgt zusätzlich über die direkte Kommentierung der jeweiligen Entwurfsfassung (siehe oben). Diese sollte daher immer im Web publiziert werden und mit Möglichkeiten der Kommentierung versehen werden. Dazu werden die regulären GitHub-Werkzeuge wie [Issues](https://guides.github.com/features/issues/) verwendet. Kommentare in den Treffen, per Mailingliste oder [Forum](https://metadaten.community) sollen auch berücksichtigt werden.
 
 ## Organisation der Arbeitsprozesse
 
@@ -81,7 +81,7 @@ Der oder die Maintainer\*innen entscheiden letztlich auch über den Zeitpunkt de
 
 ### Änderungsvorschläge in Pull Requests & Annotationen
 
-Um die Arbeit der Maintainer\*innen so einfach wie möglich zu gestalten, sollten Änderungsvorschläge nach Möglichkeit immer in Form eines [Pull Requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests) auf GitHub eingereicht werden. Auf diese Weise kann der Änderungsvorschlag öffentlich kommentiert, ggf. weiter verbessert und schließlich auf Knopfdruck durch die Maintainer\*innen übernommen werden. Als niedrigschwelligere Variante können Vorschläge auch – wie oben erwähnt – am Entwurf mit Hilfe des Annotationsdiensts hypothes.is ergänzt werden. Diese können dort diskutiert und zu gegebenem Zeitpunkt von den Maintainer\*innen in einen Pull Request überführt werden.
+Um die Arbeit der Maintainer\*innen so einfach wie möglich zu gestalten, sollten Änderungsvorschläge nach Möglichkeit immer in Form eines [Pull Requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests) auf GitHub eingereicht werden. Auf diese Weise kann der Änderungsvorschlag öffentlich kommentiert, ggf. weiter verbessert und schließlich auf Knopfdruck durch die Maintainer\*innen übernommen werden.
 
 Wichtig ist, dass *Pull Requests* immer nur Änderungen an der Entwurfsfassung im Verzeichnis `draft` beinhalten, da einmal publizierte Versionen nicht mehr substantiell geändert werden sollten. Ausnahmen stellen hier nur einfache Rechtschreibfehler oder ähnliches dar, die natürlich korrigiert werden dürfen.
 
@@ -94,10 +94,9 @@ Für die Publikation einer neuen Version eines mit ReSpec publizierten Dokuments
 1. Einen neuen Ordner anlegen und die Inhalte des Draft-Ordners da reinkopieren (als eigener Commit, um die folgenden kleinen Änderungen gegenüber dem Drat dokumentiert zu haben)
 2. Den symbolischen Link aktualisieren (Linux: `ln -sfn yyyymmdd latest`, Windows: etwas kniffelig, Google hilft).
 3. In der neuen Version ein paar Änderungen vornehmen:
-   1. hypothes.is-Einbindung aus der index.html rausnehmen.
-   2. In der ReSpec-Konfig ganz am Anfang das Release-Datum aktualisieren.
-   3. In der ReSpec-Konfig ganz am Anfang den Status von "unofficial" auf "base" ändern.
-   4. In der ReSpec-Konfig unter "otherLinks" den Link zur neuen Version ergänzen und die Auskommentierung entfernen.
+   1. In der ReSpec-Konfig ganz am Anfang das Release-Datum aktualisieren.
+   2. In der ReSpec-Konfig ganz am Anfang den Status von "unofficial" auf "base" ändern.
+   3. In der ReSpec-Konfig unter "otherLinks" den Link zur neuen Version ergänzen und die Auskommentierung entfernen.
 4. Falls die Spec auch vollständige Beispiele enthält, sollten die natürlich auch auf das Schema ihrer jeweiligen Version verweisen. Da müssen die Links in @schemaLocation also ggf. auch noch von "/draft/" auf das jeweilige Release geändert werden.
 5. Wenn ansonsten darauf geachtet wird, dass in der Spec nur relative Links verwendet werden, muss nichts weiter angepasst werden. Eventuell noch die neue Version in der README.md ergänzen, falls irgendjemand über die GitHub-Pages-Startseite kommt.
 6. Sobald die Publikation der neuen Version vollständig abgeschlossen ist, wird ein [Git Tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging) für die Version vergeben sowie auf GitHub ein [Release](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository) für diese Version angelegt ([Beispiel](https://github.com/dini-ag-kim/amb/releases/tag/20231019)).
