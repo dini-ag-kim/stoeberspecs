@@ -101,6 +101,14 @@ Für die Publikation einer neuen Version eines mit ReSpec publizierten Dokuments
 5. Wenn ansonsten darauf geachtet wird, dass in der Spec nur relative Links verwendet werden, muss nichts weiter angepasst werden. Eventuell noch die neue Version in der README.md ergänzen, falls irgendjemand über die GitHub-Pages-Startseite kommt.
 6. Sobald die Publikation der neuen Version vollständig abgeschlossen ist, wird ein [Git Tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging) für die Version vergeben sowie auf GitHub ein [Release](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository) für diese Version angelegt ([Beispiel](https://github.com/dini-ag-kim/amb/releases/tag/20231019)).
 
+### Publikation der neuen Version eines kontrollierten Vokabulars
+
+Bei der Aktualisierung eines bestehenden SKOS-Vokabulars sind folgende Dinge zu beachten:
+
+1. Bereits publizierte URIs dürfen nicht gelöscht oder geändert werden.
+2. Veraltete SKOS-Konzepte werden als solche mit ` owl:deprecated true` markiert und – so vorhanden – mit `dct:isReplacedBy` auf das Nachfolge-Konzept verlinkt. `skos:broader`- oder `skos:narrower`-Relationen der veralteten Konzepte sollen aber unangetastet bleiben.
+3. Neue Versionen werden mit einem Git tag versehen und als GitHub Releases veröffentlicht werden.
+
 ### Wiki
 
 Für jedes GitHub-Repository kann in den Einstellungen ein einfaches [Wiki](https://help.github.com/en/github/building-a-strong-community/about-wikis) aktiviert werden. Dieses kann verwendet werden, um mit der Arbeit am jeweiligen Dokument in Verbindung stehende Dokumente zentral und öffentlich abzulegen (z. B. Protokolle von Videokonferenzen).
