@@ -79,13 +79,13 @@ Um die Pflege der Standards, Spezifikationen, Empfehlungen und Vokabulare auf Gi
 
 Der oder die Maintainer\*innen entscheiden letztlich auch über den Zeitpunkt der Publikation einer neuen Version des betreffenden Dokuments, führen die entsprechenden strukturellen Änderungen im GitHub-Repository durch und verantworten die Endredaktion.
 
-### Änderungsvorschläge in Pull Requests & Annotationen
+### Änderungsvorschläge in Pull Requests
 
 Um die Arbeit der Maintainer\*innen so einfach wie möglich zu gestalten, sollten Änderungsvorschläge nach Möglichkeit immer in Form eines [Pull Requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests) auf GitHub eingereicht werden. Auf diese Weise kann der Änderungsvorschlag öffentlich kommentiert, ggf. weiter verbessert und schließlich auf Knopfdruck durch die Maintainer\*innen übernommen werden.
 
-Wichtig ist, dass *Pull Requests* immer nur Änderungen an der Entwurfsfassung im Verzeichnis `draft` beinhalten, da einmal publizierte Versionen nicht mehr substantiell geändert werden sollten. Ausnahmen stellen hier nur einfache Rechtschreibfehler oder ähnliches dar, die natürlich korrigiert werden dürfen.
+Wichtig ist, dass *Pull Requests* bei ReSpec immer nur Änderungen an der Entwurfsfassung im Verzeichnis `draft` beinhalten, da einmal publizierte Versionen nicht mehr substantiell geändert werden sollten. Ausnahmen stellen hier nur einfache Rechtschreibfehler oder ähnliches dar, die natürlich korrigiert werden dürfen.
 
-Alternativ können Änderungsvorschläge natürlich auch auf herkömmlichem Weg etwa per Mailingliste an die Maintainer\*innen geschickt werden, der diese dann jedoch wiederum als *Pull Request* auf GitHub dokumentieren sollte.
+Alternativ können Änderungsvorschläge natürlich auch auf herkömmlichem Weg etwa per Mailingliste an die Maintainer\*innen geschickt werden, die diese dann jedoch wiederum als *Pull Request* auf GitHub dokumentieren sollten.
 
 ### Publikation einer neuen Version mit ReSpec
 
@@ -100,6 +100,14 @@ Für die Publikation einer neuen Version eines mit ReSpec publizierten Dokuments
 4. Falls die Spec auch vollständige Beispiele enthält, sollten die natürlich auch auf das Schema ihrer jeweiligen Version verweisen. Da müssen die Links in @schemaLocation also ggf. auch noch von "/draft/" auf das jeweilige Release geändert werden.
 5. Wenn ansonsten darauf geachtet wird, dass in der Spec nur relative Links verwendet werden, muss nichts weiter angepasst werden. Eventuell noch die neue Version in der README.md ergänzen, falls irgendjemand über die GitHub-Pages-Startseite kommt.
 6. Sobald die Publikation der neuen Version vollständig abgeschlossen ist, wird ein [Git Tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging) für die Version vergeben sowie auf GitHub ein [Release](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository) für diese Version angelegt ([Beispiel](https://github.com/dini-ag-kim/amb/releases/tag/20231019)).
+
+### Publikation der neuen Version eines kontrollierten Vokabulars
+
+Bei der Aktualisierung eines bestehenden SKOS-Vokabulars sind folgende Dinge zu beachten:
+
+1. Bereits publizierte URIs dürfen nicht gelöscht oder geändert werden.
+2. Veraltete SKOS-Konzepte werden als solche mit ` owl:deprecated true` markiert und – so vorhanden – mit `dct:isReplacedBy` auf das Nachfolge-Konzept verlinkt. `skos:broader`- oder `skos:narrower`-Relationen der veralteten Konzepte sollen aber unangetastet bleiben.
+3. Neue Versionen werden mit einem Git tag versehen und als GitHub Releases veröffentlicht.
 
 ### Wiki
 
