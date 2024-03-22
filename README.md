@@ -107,7 +107,7 @@ Bei der Aktualisierung eines bestehenden SKOS-Vokabulars sind folgende Dinge zu 
 
 1. Bereits publizierte URIs dürfen nicht gelöscht oder geändert werden.
 2. Veraltete SKOS-Konzepte werden als solche mit ` owl:deprecated true` markiert und – so vorhanden – mit `dct:isReplacedBy` auf das Nachfolge-Konzept verlinkt. `skos:broader`- oder `skos:narrower`-Relationen der veralteten Konzepte sollen aber unangetastet bleiben.
-3. Neue Versionen werden mit einem Git tag versehen und als GitHub Releases veröffentlicht werden.
+3. Neue Versionen werden mit einem Git tag versehen und als GitHub Releases veröffentlicht.
 
 ### Wiki
 
