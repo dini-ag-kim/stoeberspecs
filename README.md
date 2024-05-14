@@ -87,7 +87,15 @@ Wichtig ist, dass *Pull Requests* bei ReSpec immer nur Änderungen an der Entwur
 
 Alternativ können Änderungsvorschläge natürlich auch auf herkömmlichem Weg etwa per Mailingliste an die Maintainer\*innen geschickt werden, die diese dann jedoch wiederum als *Pull Request* auf GitHub dokumentieren sollten.
 
-### Publikation einer neuen Version mit ReSpec
+### Abstimmung und Publikation einer neuen Spezifikationen oder Version
+
+Der offiziellen Publikation einer Spezifikation oder eines Vokabulars sowie der neuen Version existierender Vokabulare/Spezifikationen muss eine **Review-Phase von mindestens vier Wochen** vorhergehen. Dafür gelten folgende Bedingungen:
+
+- Ein für die Begutachtung reifer Entwurf ist publiziert.
+- Beginn und Ende der Begutachtungsphase werden mit einer E-Mail an die Mailinglisten und einem entsprechenden Thema im metadaten.community-Forum angekündigt.
+- Alle in der Review-Phase einegangenen Rückmeldungen und Änderungsvorschläge müssen betrachtet und diskutiert werden und entweder – wie vorgeschlagen oder mit begründeten Anpassungen – übernommen oder begründet abgelehnt werden.
+
+#### Publikation einer neuen Version mit ReSpec
 
 Für die Publikation einer neuen Version eines mit ReSpec publizierten Dokuments sind durch die Maintainer\*innen folgende Schritte zu beachten:
 
