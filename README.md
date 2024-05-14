@@ -92,7 +92,7 @@ Alternativ können Änderungsvorschläge natürlich auch auf herkömmlichem Weg 
 Der offiziellen Publikation einer Spezifikation oder eines Vokabulars sowie der neuen Version existierender Vokabulare/Spezifikationen muss eine **Review-Phase von mindestens vier Wochen** vorhergehen. Dafür gelten folgende Bedingungen:
 
 - Ein für die Begutachtung reifer Entwurf ist publiziert.
-- Beginn und Ende der Begutachtungsphase werden mit einer E-Mail an die Mailinglisten und einem entsprechenden Thema im metadaten.community-Forum angekündigt.
+- Beginn und Ende der Begutachtungsphase werden mit einer Nachricht an die relevanten Mailinglisten und einem entsprechenden Thema im metadaten.community-Forum angekündigt.
 - Alle in der Review-Phase einegangenen Rückmeldungen und Änderungsvorschläge müssen betrachtet und diskutiert werden und entweder – wie vorgeschlagen oder mit begründeten Anpassungen – übernommen oder begründet abgelehnt werden.
 
 #### Publikation einer neuen Version mit ReSpec
