@@ -65,9 +65,7 @@ Die folgende Einführung enthält auch ein Tutorial zur Erstellung und Veröffen
 
 ### Kommunikation
 
-Zur Kommunikation wird neben gelegentlichen Präsenztreffen und monatlichen Videokonferenzen vor allem die Mailingliste der jeweiligen Gruppe verwendet. Die Listen sind öffentlich und können so von jeder/m Interessierten abonniert werden.
-
-Die Arbeit an konkreten Spezifikationen und Standards erfolgt zusätzlich über die direkte Kommentierung der jeweiligen Entwurfsfassung (siehe oben). Diese sollte daher immer im Web publiziert werden und mit Möglichkeiten der Kommentierung versehen werden. Dazu werden die regulären GitHub-Werkzeuge wie [Issues](https://guides.github.com/features/issues/) verwendet. Kommentare in den Treffen, per Mailingliste oder [Forum](https://metadaten.community) sollen auch berücksichtigt werden.
+Zur Kommunikation wird neben gelegentlichen Präsenztreffen und monatlichen Videokonferenzen vor allem die Mailingliste der jeweiligen Gruppe verwendet. Die Listen sind öffentlich und können so von jeder/m Interessierten abonniert werden. Dazu werden die regulären GitHub-Werkzeuge wie [Issues](https://guides.github.com/features/issues/) verwendet. Kommentare in den Treffen, per Mailingliste oder [Forum](https://metadaten.community) sollen auch berücksichtigt werden.
 
 ## Organisation der Arbeitsprozesse
 
