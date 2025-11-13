@@ -65,7 +65,7 @@ Die folgende Einführung enthält auch ein Tutorial zur Erstellung und Veröffen
 
 ### Kommunikation
 
-Zur Kommunikation wird neben gelegentlichen Präsenztreffen und monatlichen Videokonferenzen vor allem die Mailingliste der jeweiligen Gruppe verwendet. Die Listen sind öffentlich und können so von jeder/m Interessierten abonniert werden. Dazu werden die regulären GitHub-Werkzeuge wie [Issues](https://guides.github.com/features/issues/) verwendet. Kommentare in den Treffen, per Mailingliste oder [Forum](https://metadaten.community) sollen auch berücksichtigt werden.
+Zur Kommunikation wird neben gelegentlichen Präsenztreffen und monatlichen Videokonferenzen vor das [metadaten.community](https://metadaten.community)-Forum verwendet. Das Forum ist öffentlich und kann so von jeder/m Interessierten abonniert werden. Es gibt eigene [Kategorien verschiedener Arbeitsgruppen](https://metadaten.community/c/arbeitsgruppen/7). Außerdem werden die regulären GitHub-Werkzeuge wie [Issues](https://guides.github.com/features/issues/) verwendet. Kommentare in den Treffen müssen auch berücksichtigt werden.
 
 ## Organisation der Arbeitsprozesse
 
@@ -83,14 +83,14 @@ Um die Arbeit der Maintainer\*innen so einfach wie möglich zu gestalten, sollte
 
 Wichtig ist, dass *Pull Requests* bei ReSpec immer nur Änderungen an der Entwurfsfassung im Verzeichnis `draft` beinhalten, da einmal publizierte Versionen nicht mehr substantiell geändert werden sollten. Ausnahmen stellen hier nur einfache Rechtschreibfehler oder ähnliches dar, die natürlich korrigiert werden dürfen.
 
-Alternativ können Änderungsvorschläge natürlich auch auf herkömmlichem Weg etwa per Mailingliste an die Maintainer\*innen geschickt werden, die diese dann jedoch wiederum als *Pull Request* auf GitHub dokumentieren sollten.
+Alternativ können Änderungsvorschläge natürlich auch auf herkömmlichem Weg etwa über das metadaten.community-Forum an die Maintainer\*innen geschickt werden, die diese dann jedoch wiederum als *Pull Request* auf GitHub dokumentieren sollten.
 
 ### Abstimmung und Publikation einer neuen Spezifikationen oder Version
 
 Der offiziellen Publikation einer Spezifikation oder eines Vokabulars sowie der neuen Version existierender Vokabulare/Spezifikationen muss eine **Review-Phase von mindestens vier Wochen** vorhergehen. Dafür gelten folgende Bedingungen:
 
 - Ein für die Begutachtung reifer Entwurf ist publiziert.
-- Beginn und Ende der Begutachtungsphase werden mit einer Nachricht an die relevanten Mailinglisten und einem entsprechenden Thema im metadaten.community-Forum angekündigt.
+- Beginn und Ende der Begutachtungsphase werden mit einem entsprechenden Thema im metadaten.community-Forum angekündigt.
 - Alle in der Review-Phase einegangenen Rückmeldungen und Änderungsvorschläge müssen betrachtet und diskutiert werden und entweder – wie vorgeschlagen oder mit begründeten Anpassungen – übernommen oder begründet abgelehnt werden.
 
 #### Publikation einer neuen Version mit ReSpec
